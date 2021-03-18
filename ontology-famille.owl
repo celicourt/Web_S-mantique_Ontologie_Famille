@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#"
+     xml:base="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#EstFils -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#EstFils">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estEnfantDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#EstFrèreDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#EstFrèreDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estEnRelationDeFratrie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#EstSoeurDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#EstSoeurDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estEnRelationDeFratrie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estEnRelationDeFratrie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estEnRelationDeFratrie">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estEnfantDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estEnfantDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estParentDe_25"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estFille -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estFille">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estEnfantDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estMèreDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estMèreDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estParentDe_25"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estParentDe_25 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estParentDe_25">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estPèreDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estPèreDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#estParentDe_25"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#se_marier_avec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#se_marier_avec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Nationalité -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Nationalité">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Nom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Enfant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Femme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Homme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fille">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Enfant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fils"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fils -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fils">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Enfant"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fraterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fraterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Frère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Frère">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fraterie"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Homme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandMère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandMère">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandParent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandPère"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandParent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandParent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandPère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandPère">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#GrandParent"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Homme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Mère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Mère">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Parent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Père"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Personne">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Père -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Père">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Homme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Parent"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Soeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Soeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celis/ontologies/2020/7/Famille-ontologie#Fraterie"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">celis</dc:creator>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
